@@ -14,7 +14,7 @@ else
   format=arm64-efi
   output=bootaa64.efi
 fi
-grub-mkimage -c grub.cfg -O $format -o $output -p /EFI/BOOT normal part_gpt fat linux gzio
+grub-mkimage -c grub.cfg -O $format -o $output -p /EFI/BOOT normal configfile part_gpt fat linux gzio
 
 echo Packaging GRUB ...
 mkdir /export
