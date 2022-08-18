@@ -6,6 +6,7 @@ echo "insmod fat" > grub.cfg
 echo "insmod linux" >> grub.cfg
 echo "insmod gzio" >> grub.cfg
 echo "set root=(hd0,gpt1)" >> grub.cfg
+echo "configfile /EFI/BOOT/GRUB.CFG" >> grub.cfg
 if [ "$ARCH" = "x64" ]; then
   format=x86_64-efi
   output=bootx64.efi
