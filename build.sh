@@ -18,7 +18,8 @@ mkdir /export
 cd /export || exit
 cp /build/grub .
 cp /build/LICENSE .
-echo "https://git.alpinelinux.org/aports/tree/main/grub?id=1895cf9fc22dde29d848d62c20eb0276ea2d34a7" > /export/SOURCE
-echo "2.06-r2" > /export/VERSION
+echo "Source  : https://git.alpinelinux.org/aports/tree/main/grub?id=1895cf9fc22dde29d848d62c20eb0276ea2d34a7" > /export/SOURCE
+echo "Version : 2.06-r2" >> /export/SOURCE
+echo "Package : https://github.com/vmify/grub/releases/download/$TAG/grub-$ARCH-$TAG.tar.gz" >> /export/SOURCE
 
 tar -czvf /grub.tar.gz *
