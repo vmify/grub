@@ -1,2 +1,2 @@
 # grub
-GRUB build for VMify NanoOS
+GRUB build for VMify
